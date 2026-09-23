@@ -1,6 +1,12 @@
- /* ================================
-   GLOBAL
-================================ */
+/* ========================================
+   AHSAN ALI - CYBERSECURITY PORTFOLIO
+   FINAL STYLESHEET
+======================================== */
+
+
+/* ========================================
+   RESET
+======================================== */
 
 * {
     margin: 0;
@@ -14,8 +20,8 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #0a0f0d;
-    color: #e8f5ef;
+    background: #080d0b;
+    color: #ffffff;
     line-height: 1.6;
 }
 
@@ -32,16 +38,16 @@ img {
 .container {
     width: 90%;
     max-width: 1100px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 
-/* ================================
+/* ========================================
    NAVBAR
-================================ */
+======================================== */
 
 header {
-    background: #08100d;
+    background: #060b09;
     border-bottom: 1px solid #17352a;
     position: sticky;
     top: 0;
@@ -51,8 +57,8 @@ header {
 nav {
     width: 90%;
     max-width: 1100px;
-    margin: auto;
     min-height: 70px;
+    margin: auto;
 
     display: flex;
     align-items: center;
@@ -60,31 +66,33 @@ nav {
 }
 
 .logo {
-    color: #00ff88;
+    color: #00ff88 !important;
     font-size: 24px;
     font-weight: bold;
 }
 
 nav ul {
     list-style: none;
+
     display: flex;
+    align-items: center;
     gap: 25px;
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #ffffff !important;
     font-size: 15px;
     transition: 0.3s;
 }
 
 nav ul li a:hover {
-    color: #00ff88;
+    color: #00ff88 !important;
 }
 
 
-/* ================================
+/* ========================================
    HERO
-================================ */
+======================================== */
 
 .hero {
     min-height: 90vh;
@@ -98,29 +106,29 @@ nav ul li a:hover {
     background:
         radial-gradient(
             circle at center,
-            rgba(0, 255, 136, 0.10),
+            rgba(0, 255, 136, 0.12),
             transparent 45%
         ),
-        #0a0f0d;
+        #080d0b;
 }
 
 .hero-content {
-    max-width: 800px;
+    max-width: 850px;
 }
 
 .hero h1 {
     font-size: 58px;
-    color: #ffffff;
+    color: #ffffff !important;
     margin-bottom: 15px;
 }
 
 .hero h1 span {
-    color: #00ff88;
+    color: #00ff88 !important;
 }
 
 .hero p {
     font-size: 21px;
-    color: #b9c9c1;
+    color: #c5d2cc !important;
     margin-bottom: 30px;
 }
 
@@ -130,7 +138,7 @@ nav ul li a:hover {
     padding: 13px 28px;
 
     background: #00ff88;
-    color: #06100b;
+    color: #06100b !important;
 
     border-radius: 6px;
 
@@ -141,13 +149,14 @@ nav ul li a:hover {
 
 .btn:hover {
     background: #00d4ff;
+    color: #06100b !important;
     transform: translateY(-2px);
 }
 
 
-/* ================================
-   GENERAL SECTIONS
-================================ */
+/* ========================================
+   ALL SECTION HEADINGS
+======================================== */
 
 section {
     padding: 90px 0;
@@ -155,13 +164,17 @@ section {
 
 section h2 {
     color: #ffffff !important;
+
     font-size: 36px;
+
     text-align: center;
+
     margin-bottom: 45px;
 }
 
 section h2::after {
     content: "";
+
     display: block;
 
     width: 60px;
@@ -173,12 +186,12 @@ section h2::after {
 }
 
 
-/* ================================
+/* ========================================
    ABOUT
-================================ */
+======================================== */
 
 .about {
-    background: #0d1511;
+    background: #0c1410;
 }
 
 .about-content {
@@ -209,19 +222,30 @@ section h2::after {
 }
 
 .about-text p {
-    color: #c7d4ce;
+    color: #ffffff !important;
+
     margin-bottom: 18px;
+
     font-size: 16px;
 }
 
 
-/* ================================
-   SKILLS
-================================ */
+/* ========================================
+   SKILLS SECTION
+======================================== */
 
 .skills {
-    background: #0a0f0d;
+    background: #080d0b;
 }
+
+/* MAIN SKILLS HEADING */
+
+.skills h2 {
+    color: #ffffff !important;
+}
+
+
+/* SKILLS GRID */
 
 .skills-grid {
     display: grid;
@@ -230,6 +254,9 @@ section h2::after {
 
     gap: 25px;
 }
+
+
+/* SKILL CARD */
 
 .skill-card {
     background: #101a15;
@@ -248,41 +275,67 @@ section h2::after {
 
     border-color: #00ff88;
 
-    box-shadow: 0 10px 30px rgba(0, 255, 136, 0.08);
+    box-shadow:
+        0 10px 30px rgba(0, 255, 136, 0.10);
 }
+
+
+/* SKILL CARD HEADING */
 
 .skill-card h3 {
-    color: #00ff88;
-    margin-bottom: 15px;
+    color: #00ff88 !important;
+
     font-size: 21px;
+
+    margin-bottom: 15px;
 }
 
+
+/* SKILL CARD TEXT */
+
 .skill-card p {
-    color: #c4d1ca;
+    color: #ffffff !important;
+
+    font-size: 15px;
 }
+
+
+/* SKILL LIST */
 
 .skill-card ul {
     list-style: none;
+
+    margin: 0;
+    padding: 0;
 }
 
 .skill-card ul li {
-    color: #dce8e2;
-    margin-bottom: 8px;
+    color: #ffffff !important;
+
+    margin-bottom: 9px;
+
+    font-size: 15px;
 }
 
 .skill-card ul li::before {
     content: "▹";
-    color: #00ff88;
+
+    color: #00ff88 !important;
+
     margin-right: 8px;
 }
 
 
-/* ================================
-   PROJECTS / LABS
-================================ */
+/* ========================================
+   PROJECTS / CYBERSECURITY LABS
+======================================== */
 
 .projects {
-    background: #0d1511;
+    background: #0c1410;
+}
+
+.projects h2 {
+    color: #ffffff !important;
 }
 
 .projects-grid {
@@ -310,52 +363,68 @@ section h2::after {
 
     border-color: #00d4ff;
 
-    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.08);
+    box-shadow:
+        0 10px 30px rgba(0, 212, 255, 0.10);
 }
 
 .project-card h3 {
-    color: #ffffff;
+    color: #00ff88 !important;
+
     margin-bottom: 12px;
+
+    font-size: 21px;
 }
 
 .project-card p {
-    color: #c4d1ca;
+    color: #ffffff !important;
+
     margin-bottom: 15px;
 }
 
 .project-card a {
-    color: #00ff88;
+    color: #00ff88 !important;
+
     font-weight: bold;
 }
 
 .project-card a:hover {
-    color: #00d4ff;
+    color: #00d4ff !important;
 }
 
 
-/* ================================
+/* ========================================
    CONTACT
-================================ */
+======================================== */
 
 .contact {
-    background: #0a0f0d;
+    background: #080d0b;
+}
+
+.contact h2 {
+    color: #ffffff !important;
 }
 
 .contact-content {
     max-width: 700px;
+
     margin: auto;
+
     text-align: center;
 }
 
 .contact-content p {
-    color: #c4d1ca;
+    color: #ffffff !important;
+
     margin-bottom: 25px;
 }
 
 .contact-links {
     display: flex;
+
     justify-content: center;
+
     flex-wrap: wrap;
+
     gap: 15px;
 }
 
@@ -366,20 +435,21 @@ section h2::after {
 
     border-radius: 6px;
 
-    color: #ffffff;
+    color: #ffffff !important;
 
     transition: 0.3s;
 }
 
 .contact-links a:hover {
-    color: #00ff88;
+    color: #00ff88 !important;
+
     border-color: #00ff88;
 }
 
 
-/* ================================
+/* ========================================
    FOOTER
-================================ */
+======================================== */
 
 footer {
     background: #050807;
@@ -392,17 +462,37 @@ footer {
 }
 
 footer p {
-    color: #899a91;
+    color: #ffffff !important;
 }
 
 footer a {
-    color: #00ff88;
+    color: #00ff88 !important;
 }
 
 
-/* ================================
-   CYBERSECURITY ACCENTS
-================================ */
+/* ========================================
+   GENERAL TEXT FIX
+   Prevents BLACK TEXT on dark background
+======================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffffff !important;
+}
+
+p,
+li {
+    color: #ffffff;
+}
+
+
+/* ========================================
+   CYBERSECURITY COLORS
+======================================== */
 
 .cyber-text {
     color: #00ff88 !important;
@@ -413,44 +503,30 @@ footer a {
 }
 
 
-/* ================================
-   FORCE WHITE HEADINGS
-   Fixes black heading problem
-================================ */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #ffffff;
-}
-
-.skills h2,
-.projects h2,
-.about h2,
-.contact h2 {
-    color: #ffffff !important;
-}
-
-
-/* ================================
-   MOBILE
-================================ */
+/* ========================================
+   MOBILE / TABLET
+======================================== */
 
 @media (max-width: 768px) {
 
     nav {
         flex-direction: column;
+
         padding: 18px 0;
+
         gap: 15px;
     }
 
     nav ul {
         gap: 15px;
+
         flex-wrap: wrap;
+
         justify-content: center;
+    }
+
+    .hero {
+        min-height: 80vh;
     }
 
     .hero h1 {
@@ -471,6 +547,7 @@ h6 {
 
     .about-content {
         flex-direction: column;
+
         text-align: center;
     }
 
@@ -484,9 +561,9 @@ h6 {
 }
 
 
-/* ================================
+/* ========================================
    SMALL MOBILE
-================================ */
+======================================== */
 
 @media (max-width: 480px) {
 
@@ -512,6 +589,10 @@ h6 {
     }
 
     nav ul {
-        font-size: 14px;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
     }
 }
